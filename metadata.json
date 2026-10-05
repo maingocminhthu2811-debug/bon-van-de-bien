@@ -1,0 +1,6 @@
+{
+  "name": "Đổi mới Mô hình Quản trị Biển - Phát biểu Chủ tịch Quốc hội",
+  "description": "Trình bày bài phát biểu chỉ đạo của Chủ tịch Quốc hội Trần Thanh Mẫn về dự án Luật Tài nguyên, môi trường biển và hải đảo (sửa đổi) với giao diện báo chí hiện đại.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

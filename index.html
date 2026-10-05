@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bốn vấn đề lớn về đổi mới mô hình quản trị biển - Chủ tịch Quốc hội Trần Thanh Mẫn</title>
+  <meta name="description" content="Phát biểu chỉ đạo của Chủ tịch Quốc hội Trần Thanh Mẫn về dự án Luật Tài nguyên, môi trường biển và hải đảo (sửa đổi) tại Phiên họp thứ 6, Ủy ban Thường vụ Quốc hội." />
+  <meta property="og:title" content="Chủ tịch Quốc hội Trần Thanh Mẫn: Bốn vấn đề lớn về đổi mới mô hình quản trị biển" />
+  <meta property="og:description" content="Chỉ đạo trọng tâm về đổi mới mô hình quản trị biển, tập trung 4 vấn đề lớn: pháp lý, quản trị, kinh tế biển và môi trường." />
+  
+  <!-- Phông chữ Google Fonts: Merriweather, Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Merriweather', 'Georgia', 'serif'],
+            display: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- CSS Tùy chỉnh Nền xanh Hoạt họa Tươi sáng & Trang trí -->
+  <style>
+    /* Gradient nền chuyển động tươi sáng */
+    @keyframes bgGlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animated-bg {
+      background: linear-gradient(-45deg, #E0F2FE, #BAE6FD, #E0F7FA, #F0F9FF);
+      background-size: 300% 300%;
+      animation: bgGlow 12s ease infinite;
+    }
+    .dark .animated-bg {
+      background: linear-gradient(-45deg, #071521, #0B2538, #062B3A, #031C2E);
+      background-size: 300% 300%;
+      animation: bgGlow 12s ease infinite;
+    }
+
+    /* Animation sóng biển động nhẹ nhàng */
+    @keyframes waveFlow {
+      0% { transform: translateX(0) scaleY(1); }
+      50% { transform: translateX(-30px) scaleY(1.08); }
+      100% { transform: translateX(0) scaleY(1); }
+    }
+    .animate-wave {
+      animation: waveFlow 14s ease-in-out infinite;
+    }
+
+    /* Chữ cái mở đầu bài viết (Drop Cap) */
+    @keyframes letterGlow {
+      0%, 100% {
+        filter: drop-shadow(0 0 2px rgba(2, 132, 199, 0.3));
+      }
+      50% {
+        filter: drop-shadow(0 0 10px rgba(14, 165, 233, 0.8));
+      }
+    }
+    .drop-cap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      line-height: 0.82;
+      float: left;
+      margin-right: 0.65rem;
+      margin-top: 0.15rem;
+      font-weight: 900;
+      color: #0284C7;
+      animation: letterGlow 4s ease-in-out infinite;
+    }
+    .dark .drop-cap::first-letter {
+      color: #38BDF8;
+    }
+
+    /* Hiệu ứng động cho chữ (p#p1 và p#p2) */
+    @keyframes textEnter {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes textGlowPulse {
+      0%, 100% {
+        text-shadow: 0 0 0 rgba(14, 165, 233, 0);
+      }
+      50% {
+        text-shadow: 0 1px 10px rgba(14, 165, 233, 0.28);
+      }
+    }
+
+    #p1 {
+      text-align: justify;
+      animation: textEnter 0.9s cubic-bezier(0.16, 1, 0.3, 1) both, textGlowPulse 5s ease-in-out infinite 0.9s;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    #p2 {
+      text-align: justify;
+      animation: textEnter 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both, textGlowPulse 5s ease-in-out infinite 1.4s;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    #p1:hover, #p2:hover {
+      transform: translateY(-2px);
+      text-shadow: 0 2px 14px rgba(2, 132, 199, 0.35);
+    }
+
+    /* Gradient thẻ màu xanh biển nhạt chuyển động mượt mà */
+    @keyframes cardSeaGradient {
+      0% {
+        background-position: 0% 50%;
+        border-color: rgba(56, 189, 248, 0.7);
+        box-shadow: 0 20px 50px -10px rgba(2, 132, 199, 0.2);
+      }
+      50% {
+        background-position: 100% 50%;
+        border-color: rgba(14, 165, 233, 0.9);
+        box-shadow: 0 25px 60px -10px rgba(14, 165, 233, 0.3);
+      }
+      100% {
+        background-position: 0% 50%;
+        border-color: rgba(56, 189, 248, 0.7);
+        box-shadow: 0 20px 50px -10px rgba(2, 132, 199, 0.2);
+      }
+    }
+    .animated-card {
+      background: linear-gradient(-45deg, #E0F2FE, #BAE6FD, #E0F7FA, #D1E9FA, #F0F9FF);
+      background-size: 350% 350%;
+      animation: cardSeaGradient 8s ease infinite;
+    }
+    .dark .animated-card {
+      background: linear-gradient(-45deg, #071E30, #0B2B42, #08334E, #031D30);
+      background-size: 350% 350%;
+      animation: cardSeaGradient 8s ease infinite;
+    }
+
+    /* Thanh cuộn tinh tế */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #E0F2FE;
+    }
+    .dark ::-webkit-scrollbar-track {
+      background: #0B1E2E;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #38BDF8;
+      border-radius: 9999px;
+    }
+
+    @media print {
+      nav, .no-print {
+        display: none !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-slate-950 font-sans antialiased min-h-screen flex flex-col justify-center items-center p-4 sm:p-8 md:p-12 relative overflow-x-hidden selection:bg-sky-200 selection:text-sky-900 dark:selection:bg-sky-800 dark:selection:text-sky-100">
+
+  <!-- Thanh thông báo Toast khi sao chép -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-sky-900 text-white dark:bg-sky-400 dark:text-slate-950 px-4 py-3 rounded-2xl shadow-2xl text-xs font-bold transform translate-y-12 opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-2.5">
+    <svg class="w-4 h-4 text-emerald-400 dark:text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+    </svg>
+    <span>Đã sao chép nguyên văn phát biểu chỉ đạo!</span>
+  </div>
+
+  <!-- NỘI DUNG CHÍNH: BÀI PHÁT BIỂU NGUYÊN VĂN TÁI CẤU TRÚC -->
+  <main class="w-full max-w-3xl my-auto relative z-10">
+    <article class="animated-card p-6 sm:p-10 md:p-12 rounded-3xl border-2 border-sky-300 dark:border-sky-500/80 shadow-2xl backdrop-blur-xl">
+      
+
+      <!-- 1. Hình ảnh Chủ tịch Quốc hội Trần Thanh Mẫn - Khung hình tròn (To thêm 50%) -->
+      <div class="my-6 text-center">
+        <div class="relative inline-block group">
+          <!-- Quầng sáng hoạt họa tỏa rộng xung quanh ảnh tròn -->
+          <div class="absolute -inset-3 rounded-full bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-400 opacity-70 group-hover:opacity-100 blur-md transition-all duration-500 animate-pulse"></div>
+          
+          <img 
+            src="/F4-Ong-Tran-Thanh-Man.jpg" 
+            alt="Chủ tịch Quốc hội Trần Thanh Mẫn" 
+            referrerPolicy="no-referrer"
+            onerror="this.onerror=null; this.src='1791180864700_5984258826403716912_5984258826403716912_5d41132fb5984054f37424ae36ec99a4.jpg';"
+            class="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full object-cover mx-auto shadow-2xl border-4 border-white dark:border-slate-800 ring-4 ring-sky-400/90 dark:ring-sky-400/90 transform transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      </div>
+
+      <!-- 2. Tên [Chủ tịch Quốc hội] [Trần Thanh Mẫn] nằm phía dưới tách 2 dòng -->
+      <div id="speaker-name" class="text-center mt-4 mb-2 text-lg sm:text-xl font-extrabold uppercase tracking-wide text-sky-900 dark:text-sky-200 leading-normal overflow-visible">
+        <span class="block py-0.5">Chủ tịch Quốc hội</span>
+        <span class="block text-xl sm:text-2xl text-sky-950 dark:text-sky-100 font-black mt-0.5 py-0.5">Trần Thanh Mẫn</span>
+      </div>
+
+      <!-- 3. Kế tiếp [(Phát biểu chỉ đạo tại Phiên họp thứ 6, Ủy ban Thường vụ Quốc hội sáng 22-9)] canh giữa -->
+      <div id="citation-source" class="text-center mb-6">
+        <span class="inline-block px-5 py-2 rounded-full bg-white/90 dark:bg-sky-950/90 border border-sky-300 dark:border-sky-700 text-xs sm:text-sm font-bold text-sky-900 dark:text-sky-200 italic shadow-md">
+          (Phát biểu chỉ đạo tại Phiên họp thứ 6, Ủy ban Thường vụ Quốc hội sáng 22-9)
+        </span>
+      </div>
+
+      <!-- 4. Title [Bốn vấn đề lớn] [về đổi mới mô hình] [quản trị biển] hiển thị 100% trọn vẹn dấu tiếng Việt không bị cắt -->
+      <h1 id="main-title" class="text-3xl sm:text-4xl md:text-5xl font-display font-black text-center text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-cyan-500 to-blue-600 dark:from-sky-100 dark:via-cyan-100 dark:to-teal-200 leading-normal sm:leading-relaxed py-3 mb-8 tracking-normal overflow-visible">
+        <span class="block py-1">Bốn vấn đề lớn</span>
+        <span class="block py-1 mt-0.5 sm:mt-1">về đổi mới mô hình</span>
+        <span class="block py-1 mt-0.5 sm:mt-1">quản trị biển</span>
+      </h1>
+
+      <!-- 5. Thân bài văn bản NGUYÊN VĂN CHÍNH XÁC 100% trong thẻ tương phản cao -->
+      <div class="relative p-6 sm:p-8 rounded-3xl bg-white/90 dark:bg-slate-900/90 border border-sky-200 dark:border-slate-700/80 shadow-xl backdrop-blur-md">
+        <!-- Dấu "" trang trí nghệ thuật -->
+        <span class="absolute -top-4 left-4 text-7xl sm:text-8xl font-serif text-sky-400/60 dark:text-sky-500/50 select-none pointer-events-none leading-none">“</span>
+        <span class="absolute -bottom-8 right-4 text-7xl sm:text-8xl font-serif text-sky-400/60 dark:text-sky-500/50 select-none pointer-events-none leading-none">”</span>
+
+        <div id="article-body" class="relative z-10 font-serif text-base sm:text-lg leading-relaxed sm:leading-loose text-slate-900 dark:text-slate-100 space-y-6">
+          
+          <!-- Đoạn 1 NGUYÊN VĂN -->
+          <p id="p1" class="drop-cap font-medium text-justify">
+            Dự án Luật Tài nguyên, môi trường biển và hải đảo (sửa đổi) rất quan trọng. Lần sửa đổi này không còn là sửa vài điều mà là đổi mới mô hình quản trị biển, tập trung vào bốn vấn đề lớn: pháp lý, quản trị, kinh tế biển và môi trường. Việc quản lý, sử dụng không gian biển là nội dung nền tảng. Luật phải giữ nguyên tắc quản lý cột nước, đáy biển, lòng đất dưới đáy biển; có cơ chế xử lý chồng lấn giữa các lĩnh vực dầu khí, điện gió, nuôi biển, hàng hải, quốc phòng, bảo tồn; quy định việc sử dụng đa mục đích, sử dụng chung và phân định trách nhiệm quản lý hành chính trên biển. Đồng thời, cần định nghĩa rõ “không gian biển” ngay trong Luật để thống nhất khái niệm, tránh “va chạm” với các luật hiện hành như Luật Quy hoạch, Luật Điện lực, Luật Dầu khí 2026, Luật Địa chất và Khoáng sản.
+          </p>
+
+          <!-- Đoạn 2 NGUYÊN VĂN -->
+          <p id="p2" class="font-medium text-justify">
+            Về quyền sử dụng khu vực biển, việc dự thảo Luật cho phép chuyển nhượng, cho thuê, góp vốn, thế chấp quyền sử dụng khu vực biển và tài sản gắn liền là cần thiết để thu hút ngân hàng, nhà đầu tư tham gia. Tuy nhiên, dự thảo Luật phải thiết kế rõ ràng, làm rõ đây là quyền sử dụng không tạo quyền sở hữu biển, đáy biển, khối nước. Đối với kiểm soát ô nhiễm, bảo tồn hệ sinh thái, phải chuyển từ xử lý sang phòng ngừa. Sức chịu tải phải trở thành điều kiện pháp lý, không chỉ là bản đồ kỹ thuật; nếu không đạt ngưỡng thì không cấp phép, gia hạn. Đồng thời, cần có chính sách ưu đãi, hỗ trợ vượt trội trên biển, bảo đảm nội luật hóa và phù hợp với các điều ước quốc tế.
+          </p>
+
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- KỊCH BẢN JAVASCRIPT XỬ LÝ -->
+  <script>
+    let currentFontSizeIndex = 1;
+    const fontSizes = ['text-sm sm:text-base', 'text-base sm:text-lg', 'text-lg sm:text-xl', 'text-xl sm:text-2xl'];
+    let isSpeechPlaying = false;
+    let synthUtterance = null;
+
+    function changeFontSize(delta) {
+      const articleBody = document.getElementById('article-body');
+      articleBody.classList.remove(...fontSizes);
+      currentFontSizeIndex = Math.max(0, Math.min(fontSizes.length - 1, currentFontSizeIndex + delta));
+      articleBody.classList.add(...fontSizes[currentFontSizeIndex].split(' '));
+    }
+
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+    }
+
+    function toggleSpeech() {
+      const btnLabel = document.getElementById('label-audio');
+      const iconPlay = document.getElementById('icon-play');
+      const iconPause = document.getElementById('icon-pause');
+
+      if ('speechSynthesis' in window) {
+        if (isSpeechPlaying) {
+          window.speechSynthesis.cancel();
+          isSpeechPlaying = false;
+          btnLabel.innerText = 'Nghe phát biểu';
+          iconPlay.classList.remove('hidden');
+          iconPause.classList.add('hidden');
+        } else {
+          const textToRead = "Chủ tịch Quốc hội Trần Thanh Mẫn: Bốn vấn đề lớn về đổi mới mô hình quản trị biển. " +
+            document.getElementById('p1').innerText + " " +
+            document.getElementById('p2').innerText;
+
+          synthUtterance = new SpeechSynthesisUtterance(textToRead);
+          synthUtterance.lang = 'vi-VN';
+          synthUtterance.rate = 0.95;
+
+          synthUtterance.onend = () => {
+            isSpeechPlaying = false;
+            btnLabel.innerText = 'Nghe phát biểu';
+            iconPlay.classList.remove('hidden');
+            iconPause.classList.add('hidden');
+          };
+
+          window.speechSynthesis.speak(synthUtterance);
+          isSpeechPlaying = true;
+          btnLabel.innerText = 'Dừng nghe';
+          iconPlay.classList.add('hidden');
+          iconPause.classList.remove('hidden');
+        }
+      } else {
+        alert('Trình duyệt của bạn không hỗ trợ tính năng đọc âm thanh tự động.');
+      }
+    }
+
+    function copyVerbatimText() {
+      const fullText = `Chủ tịch Quốc hội Trần Thanh Mẫn:
+Bốn vấn đề lớn về đổi mới mô hình quản trị biển
+Dự án Luật Tài nguyên, môi trường biển và hải đảo (sửa đổi) rất quan trọng. Lần sửa đổi này không còn là sửa vài điều mà là đổi mới mô hình quản trị biển, tập trung vào bốn vấn đề lớn: pháp lý, quản trị, kinh tế biển và môi trường. Việc quản lý, sử dụng không gian biển là nội dung nền tảng. Luật phải giữ nguyên tắc quản lý cột nước, đáy biển, lòng đất dưới đáy biển; có cơ chế xử lý chồng lấn giữa các lĩnh vực dầu khí, điện gió, nuôi biển, hàng hải, quốc phòng, bảo tồn; quy định việc sử dụng đa mục đích, sử dụng chung và phân định trách nhiệm quản lý hành chính trên biển. Đồng thời, cần định nghĩa rõ “không gian biển” ngay trong Luật để thống nhất khái niệm, tránh “va chạm” với các luật hiện hành như Luật Quy hoạch, Luật Điện lực, Luật Dầu khí 2026, Luật Địa chất và Khoáng sản.
+Về quyền sử dụng khu vực biển, việc dự thảo Luật cho phép chuyển nhượng, cho thuê, góp vốn, thế chấp quyền sử dụng khu vực biển và tài sản gắn liền là cần thiết để thu hút ngân hàng, nhà đầu tư tham gia. Tuy nhiên, dự thảo Luật phải thiết kế rõ ràng, làm rõ đây là quyền sử dụng không tạo quyền sở hữu biển, đáy biển, khối nước. Đối với kiểm soát ô nhiễm, bảo tồn hệ sinh thái, phải chuyển từ xử lý sang phòng ngừa. Sức chịu tải phải trở thành điều kiện pháp lý, không chỉ là bản đồ kỹ thuật; nếu không đạt ngưỡng thì không cấp phép, gia hạn. Đồng thời, cần có chính sách ưu đãi, hỗ trợ vượt trội trên biển, bảo đảm nội luật hóa và phù hợp với các điều ước quốc tế.
+(Phát biểu chỉ đạo tại Phiên họp thứ 6, Ủy ban Thường vụ Quốc hội sáng 22-9)`;
+
+      navigator.clipboard.writeText(fullText).then(() => {
+        const toast = document.getElementById('toast');
+        toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-12');
+        toast.classList.add('opacity-100', 'translate-y-0');
+
+        setTimeout(() => {
+          toast.classList.remove('opacity-100', 'translate-y-0');
+          toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-12');
+        }, 3000);
+      });
+    }
+  </script>
+</body>
+</html>
