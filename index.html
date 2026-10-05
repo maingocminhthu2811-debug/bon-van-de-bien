@@ -191,51 +191,37 @@
   <!-- NỘI DUNG CHÍNH: BÀI PHÁT BIỂU NGUYÊN VĂN TÁI CẤU TRÚC -->
   <main class="w-full max-w-3xl my-auto relative z-10">
     <article class="animated-card p-6 sm:p-10 md:p-12 rounded-3xl border-2 border-sky-300 dark:border-sky-500/80 shadow-2xl backdrop-blur-xl">
-      
 
-      <!-- 1. Hình ảnh Chủ tịch Quốc hội Trần Thanh Mẫn - Khung hình tròn (To thêm 50%) -->
-      <div class="my-6 text-center">
-        <div class="relative inline-block group">
-          <!-- Quầng sáng hoạt họa tỏa rộng xung quanh ảnh tròn -->
-          <div class="absolute -inset-3 rounded-full bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-400 opacity-70 group-hover:opacity-100 blur-md transition-all duration-500 animate-pulse"></div>
-          
-          <img 
-            src="/F4-Ong-Tran-Thanh-Man.jpg" 
-            alt="Chủ tịch Quốc hội Trần Thanh Mẫn" 
-            referrerPolicy="no-referrer"
-            onerror="this.onerror=null; this.src='1791180864700_5984258826403716912_5984258826403716912_5d41132fb5984054f37424ae36ec99a4.jpg';"
-            class="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full object-cover mx-auto shadow-2xl border-4 border-white dark:border-slate-800 ring-4 ring-sky-400/90 dark:ring-sky-400/90 transform transition-transform duration-300 group-hover:scale-105"
-          />
+      <!-- Thân bài văn bản NGUYÊN VĂN CHÍNH XÁC 100% trong thẻ tương phản cao -->
+      <div class="relative p-6 sm:p-10 rounded-3xl bg-white/90 dark:bg-slate-900/90 border border-sky-200 dark:border-slate-700/80 shadow-xl backdrop-blur-md">
+        
+        <!-- Biểu tượng dấu trích dẫn mở ngoặc riêng biệt phía trên, không bao giờ đè lên chữ -->
+        <div class="mb-3 flex items-center text-sky-500 dark:text-sky-400 select-none">
+          <svg class="w-8 h-8 sm:w-10 sm:h-10 opacity-70" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          </svg>
         </div>
-      </div>
 
-      <!-- 2. Tên [Chủ tịch Quốc hội] [Trần Thanh Mẫn] nằm phía dưới tách 2 dòng -->
-      <div id="speaker-name" class="text-center mt-4 mb-2 text-lg sm:text-xl font-extrabold uppercase tracking-wide text-sky-900 dark:text-sky-200 leading-normal overflow-visible">
-        <span class="block py-0.5">Chủ tịch Quốc hội</span>
-        <span class="block text-xl sm:text-2xl text-sky-950 dark:text-sky-100 font-black mt-0.5 py-0.5">Trần Thanh Mẫn</span>
-      </div>
-
-      <!-- 3. Kế tiếp [(Phát biểu chỉ đạo tại Phiên họp thứ 6, Ủy ban Thường vụ Quốc hội sáng 22-9)] canh giữa -->
-      <div id="citation-source" class="text-center mb-8">
-        <span class="inline-block px-5 py-2 rounded-full bg-white/90 dark:bg-sky-950/90 border border-sky-300 dark:border-sky-700 text-xs sm:text-sm font-bold text-sky-900 dark:text-sky-200 italic shadow-md">
-          (Phát biểu chỉ đạo tại Phiên họp thứ 6, Ủy ban Thường vụ Quốc hội sáng 22-9)
-        </span>
-      </div>
-
-      <!-- 5. Thân bài văn bản NGUYÊN VĂN CHÍNH XÁC 100% trong thẻ tương phản cao -->
-      <div class="relative p-6 sm:p-8 rounded-3xl bg-white/90 dark:bg-slate-900/90 border border-sky-200 dark:border-slate-700/80 shadow-xl backdrop-blur-md">
-        <!-- Dấu "" trang trí nghệ thuật -->
-        <span class="absolute -top-4 left-4 text-7xl sm:text-8xl font-serif text-sky-400/60 dark:text-sky-500/50 select-none pointer-events-none leading-none">“</span>
-        <span class="absolute -bottom-8 right-4 text-7xl sm:text-8xl font-serif text-sky-400/60 dark:text-sky-500/50 select-none pointer-events-none leading-none">”</span>
-
-        <div id="article-body" class="relative z-10 font-serif text-base sm:text-lg leading-relaxed sm:leading-loose text-slate-900 dark:text-slate-100 space-y-6">
-          
-          <!-- Nội dung chỉ đạo NGUYÊN VĂN -->
+        <div id="article-body" class="relative z-10 font-serif text-base sm:text-lg leading-relaxed sm:leading-loose text-slate-900 dark:text-slate-100">
+          <!-- Nội dung chỉ đạo NGUYÊN VĂN kèm dấu đóng ngoặc liền sau câu kết thúc -->
           <p id="p1" class="drop-cap font-medium text-justify">
-            Dự án Luật Tài nguyên, môi trường biển và hải đảo (sửa đổi) rất quan trọng. Lần sửa đổi này không còn là sửa vài điều mà là đổi mới mô hình quản trị biển, tập trung vào bốn vấn đề lớn: pháp lý, quản trị, kinh tế biển và môi trường. Việc quản lý, sử dụng không gian biển là nội dung nền tảng. Luật phải giữ nguyên tắc quản lý cột nước, đáy biển, lòng đất dưới đáy biển; có cơ chế xử lý chồng lấn giữa các lĩnh vực dầu khí, điện gió, nuôi biển, hàng hải, quốc phòng, bảo tồn; quy định việc sử dụng đa mục đích, sử dụng chung và phân định trách nhiệm quản lý hành chính trên biển. Đồng thời, cần định nghĩa rõ “không gian biển” ngay trong luật này để thống nhất khái niệm, tránh “va chạm” với các luật hiện hành như Luật Quy hoạch, Luật Điện lực, Luật Dầu khí 2026, Luật Địa chất và Khoáng sản.
+            Dự án Luật Tài nguyên, môi trường biển và hải đảo (sửa đổi) rất quan trọng. Lần sửa đổi này không còn là sửa vài điều mà là đổi mới mô hình quản trị biển, tập trung vào bốn vấn đề lớn: pháp lý, quản trị, kinh tế biển và môi trường. Việc quản lý, sử dụng không gian biển là nội dung nền tảng. Luật phải giữ nguyên tắc quản lý cột nước, đáy biển, lòng đất dưới đáy biển; có cơ chế xử lý chồng lấn giữa các lĩnh vực dầu khí, điện gió, nuôi biển, hàng hải, quốc phòng, bảo tồn; quy định việc sử dụng đa mục đích, sử dụng chung và phân định trách nhiệm quản lý hành chính trên biển. Đồng thời, cần định nghĩa rõ “không gian biển” ngay trong luật này để thống nhất khái niệm, tránh “va chạm” với các luật hiện hành như Luật Quy hoạch, Luật Điện lực, Luật Dầu khí 2026, Luật Địa chất và Khoáng sản.”
           </p>
-
         </div>
+
+        <!-- 2 dòng thông tin người phát biểu & nguồn trích dẫn sau nội dung (bỏ dấu gạch đầu dòng) -->
+        <div class="mt-8 pt-6 border-t border-sky-100 dark:border-slate-800/80 flex flex-col items-end text-right space-y-2">
+          <div id="speaker-name" class="text-base sm:text-lg md:text-xl font-extrabold uppercase tracking-wide text-sky-900 dark:text-sky-200">
+            <span>Chủ tịch Quốc hội <strong class="text-sky-950 dark:text-white font-black">Trần Thanh Mẫn</strong></span>
+          </div>
+
+          <div id="citation-source" class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 italic font-medium">
+            <span class="inline-block px-3.5 py-1 rounded-full bg-sky-50 dark:bg-slate-800 border border-sky-200/70 dark:border-slate-700/70 shadow-xs">
+              (Phát biểu chỉ đạo tại Phiên họp thứ 6, Ủy ban Thường vụ Quốc hội sáng 22-9)
+            </span>
+          </div>
+        </div>
+
       </div>
 
     </article>
